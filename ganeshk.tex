@@ -1,0 +1,364 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.6.5, 3 Nov 2022) written by LianTze Lim (liantze@gmail.com), based on the
+% CV created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 package.
+%% See http://texdoc.net/pkg/fontawesome5 for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{DarkBlue}{HTML}{1422b2}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+% \colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkBlue}
+\colorlet{headingrule}{DarkBlue}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{DarkBlue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear}
+
+\NewDocumentCommand{\codeword}{v}{%
+\texttt{\textcolor{blue}{#1}}%
+}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{pubs-num}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+
+\name{Ganesh Kathiresan}
+\tagline{Software Development Engineer}
+
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%% You can add multiple photos on the left or right
+% \photoR{2.5cm}{mmayer-wikipedia-cc-by-2_0}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{ganesh3597@gmail.com}
+  \email{gakathir@amazon.com}
+%   \phone{000-00-0000}
+  \linkedin{ganesh-kathiresan}
+  \github{ganesh-k13}
+  \printinfo{\faMedium}{ganeshkathiresan}[https://ganeshkathiresan.medium.com/]
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{0000-0000-0000-0000} % Obviously making this up too.
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+	%%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+% \cvevent{\includegraphics[scale=0.035]{logo/Amazon_logo.png}Amazon | AWS}{Software Development Engineer 2 (L5)}{December 2021 -- Ongoing}{Bangalore, KA}
+\cvachievement{\includegraphics[scale=0.02]{logo/aws.png}}{\hspace{3mm}Amazon | Amazon Web Services}{\hspace{3mm}Software Development Engineer 2 (L5)}\nolinebreak
+\cvevent{}{}{December 2021 -- Ongoing}{Bangalore, KA}
+% {AWS: ECS, DynamoDB, CloudWatch, SNS, SQS, EventBridge, Lambda, Redis, MemoryDB}
+\begin{itemize}
+
+\item 
+    \begin{justify}
+    Currently developing a brand new AWS service to provide Network-as-a-service. Responsible for designing and developing two of the business critical features of the product before launching the service for general availability. As a core developer and founding member of this new AWS service, I collaborated with teams across 5 time zones and answered customer queries to help drive sales.
+    \end{justify}
+\item
+    \begin{justify}
+    Designed and developed a Zero-Touch network configuration deployment system for every Amazon and third-party
+    physical store across the globe. Eliminated manual effort of about 1700 engineering hours per AWS Region per month for our customers (Network Operations and Stores Tech Launch teams)
+    \end{justify}
+\item
+    \begin{justify}
+    Built a generic Flask-based micro-service template package to bring up a Fargate-managed ECS service through CDK effortlessly. The framework supports CDK-based infrastructure with built-in authentication and authorization (Midway/SigV4), Cloudwatch-based alarms, and clients for popular AWS services such as S3, MemoryDB, DynamoDB, and Cloudwatch. It saves about one month of engineering time to bring up a new service in Python.
+    \end{justify}
+\item
+    \begin{justify}
+    Wrote various automation scripts at the request of our customers (Network Operations) to simplify repetitive tasks. This includes a configuration diff/drift detection tool that creates an inventory of 1000+ devices and computes the presence of dangerous drifts and is used widely in production today as part of regular operations. Other notable scripts include automated SSD firmware updates to network devices and bootstrap configuration updates.
+    \end{justify}
+\item
+    \begin{justify}
+    As a team on-call member, I helped mitigate issues in live deployments. Took part in Large Scale Events (LSE) calls to help put out fires in services that have direct customer impact. Improved the team on-call experience by deep diving into repeated issues, finding the root cause, and automating preventive measures.
+    \end{justify}
+\end{itemize}
+
+\divider
+
+\cvachievement{\includegraphics[scale=0.045]{logo/citrix.png}}{\hspace{1.1cm}Citrix Systems}{\hspace{1.1cm}Software Engineer}\nolinebreak
+\cvevent{}{}{July 2019 -- December 2021}{Bangalore, KA}
+\begin{itemize}
+\item
+    \begin{justify}
+    Designed and developed \href{https://docs.citrix.com/en-us/citrix-application-delivery-management-service/analytics/security/waf-recommendation.html}{\color{DarkBlue}Citrix WAF Recommendation Engine (CWRE)} that detects technologies and vulnerabilities in the backend service to recommend Security configurations and Signatures for protection against known CVEs. Helps customers automate the process of configuring complex firewall rules leading to increased security. Responsible for the thread management module that increased efficiency by 60\%. Built data engine for IPC using ZMQ which enabled developers to modularize into sub-processes.
+    \end{justify}
+\item
+    \begin{justify}
+    Built a framework in Citrix Ingress Controller (CIC) to configure NetScaler WAF in a Kubernetes deployment.
+    Received positive reception from customers for ease of use and helped drive many sales. \href{https://github.com/citrix/citrix-k8s-ingress-controller/tree/master/crd/waf}{\color{DarkBlue}{GitHub Link}}
+    \end{justify}
+\item
+    \begin{justify}
+    Built a pipeline to automate the process of producing new weekly signatures for Citrix WAF which saves about 4 hours of engineering time per release and bridged over 8 weeks gap in the signature release cycle to make Citrix WAF highly competitive due to shorter release periodicity.
+    \end{justify}
+\end{itemize}
+\divider
+
+\newpage
+
+\cvachievement{\includegraphics[scale=0.045]{logo/citrix.png}}{\hspace{1cm}Citrix Systems}{\hspace{1cm}Software Engineering Intern}\nolinebreak
+\cvevent{}{}{July 2019 -- December 2021}{Bangalore, KA}
+\begin{itemize}
+\item
+    \begin{justify}
+    Built a framework for Citrix Ingress Controller to configure NetScaler as an Ingress using Custom Resource Definitions. Selected for Tech Fair 2019. Helped in the design of various CIC CRDs and core infrastructure of config management modules.
+    \end{justify}
+\end{itemize}
+
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+% use ONLY \newpage if you want to force a page break for
+% ONLY the currentc column
+% \newpage
+
+\cvsection{Publications}
+\href{https://scholar.google.co.in/citations?user=qqj1AtEAAAAJ&hl=en}{\color{DarkBlue}{Google Scholar Profile (28 citations)}}
+\smallskip
+%% Specify your last name(s) and first name(s) as given in the .bib to automatically bold your own name in the publications list.
+%% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
+%% You can specify multiple names, especially if you have changed your name or if you need to highlight multiple authors.
+\mynames{Kathiresan/Ganesh}
+%% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
+
+\nocite{*}
+\begin{justify}
+\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
+\end{justify}
+
+\divider
+
+\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Patents}},type=misc]
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+\cvsection{Open Source}
+
+\cvachievement{\includegraphics[scale=0.1]{logo/download.png}}{NumPy}{Core Developer and Maintainer}
+\href{https://numpy.org/teams}{\color{DarkBlue}{Core Team}} | \href{https://github.com/numpy/numpy/pulls?q=is%3Apr+author%3Aganesh-k13}{\color{DarkBlue}{Contributions}}
+\smallskip
+\begin{itemize}
+
+\item
+\begin{justify}
+\codeword{bit_count} (\codeword{popcount}) to optimally count the number of 1-bits in an integer, a widely requested feature
+\end{justify}
+
+\item
+\begin{justify}
+Developed dispatch logic for integer division using Universal SIMD Intrinsic to improve efficiency by over 90\%
+\end{justify}
+
+\item
+\begin{justify}
+Author of \codeword{show_runtime} and \codeword{show_config} and to help users provide meaningful system information when filing bugs and actively used on every issue filled.
+\end{justify}
+
+\item
+\begin{justify}
+Revamped the NumPy build system with various contributions to \codeword{Meson} migration and new commands to the upstream build package \codeword{spin} used by 20+ packages in the scientific Python community
+\end{justify}
+
+\item
+\begin{justify}
+\codeword{hex} and \codeword{fromhex} implementation for all floating-point types
+\end{justify}
+
+\end{itemize}
+
+\divider
+
+\cvachievement{\includegraphics[scale=0.015]{logo/OpenCV.png}}{OpenCV}{Contributor}
+\href{https://github.com/opencv/opencv/pulls?q=is%3Apr+author%3Aganesh-k13}{\color{DarkBlue}{Contributions}}
+\smallskip
+\begin{itemize}
+\item
+\begin{justify}
+Added support for determining the number of CPUs in the host machine more accurately for various platforms which improve the functionality of parallel modules
+\end{justify}
+
+\item
+\begin{justify}
+Added greyscale flags and JPEG resize support for \codeword{imdecode}, helping users to avoid performing multiple
+transformations
+\end{justify}
+
+\item
+\begin{justify}
+Fixed crash grade issues and added UT for image codecs and Calib3d modules to help developers catch regressions
+\end{justify}
+\end{itemize}
+
+\divider
+
+\cvachievement{\includegraphics[scale=0.04]{logo/Python.png}}{Python/CPython}{Contributor}
+\smallskip
+\href{https://github.com/python/cpython/pulls?q=is%3Apr+author%3Aganesh-k13}{\color{DarkBlue}{Contributions}}
+\begin{itemize}
+\item
+\begin{justify}
+Redefined \codeword{PY_SSIZE_T_MAX} and \codeword{PY_SSIZE_T_MIN} to make it usable in preprocessor conditionals
+\end{justify}
+\end{itemize}
+
+\cvsection{Skills}
+
+\cvevent{}{Languages}{}{}
+\cvtag{C}
+\cvtag{C++}
+\cvtag{Python}
+\cvtag{Java}
+
+\divider
+
+\cvevent{}{Technologies}{}{}
+\cvtag{AWS}
+\cvtag{Docker}
+\cvtag{Kubernetes}
+\cvtag{PostgreSQL}
+\cvtag{SQLite}
+\cvtag{MongoDB}
+\cvtag{DynamoDB}
+\cvtag{Git}
+\cvtag{ECS}
+\cvtag{Fargate}
+\cvtag{Redis}
+\cvtag{EC2}
+\cvtag{SNS}
+\cvtag{SQS}
+\cvtag{S3}
+\cvtag{Route53}
+% \cvtag{}
+
+
+\cvsection{Education}
+
+\cvevent{B.Tech.\ in Computer Science}{PES University, GPA: 9.20}{2015 -- 2019}{}
+
+% \newpage
+
+\cvsection{HONORS AND AWARDS}
+
+\begin{itemize}
+
+\item \begin{justify} Received Quality Award Q3 2019 for developing WAF Signature Auto Update Tool \end{justify}
+\item \begin{justify} Received Spot Bonus in Q3 2020 for performance \end{justify}
+\item \begin{justify} Won Graduate Induction 2019 Tech Project for developing Mock API as a Service \end{justify}
+\item \begin{justify} Received Dr. CNR Rao Merit Award scholarship for being in the top 20\% of CS department. \end{justify}
+\item Finalist (top 10) in \#UnitedByHCL International Hackathon-2017 out of 14000+ participants globally for a project on AI-based content ranking algorithm for Ubisoft SA, held at Old Trafford, Manchester, UK
+\item \begin{justify} AI-based content ranking algorithm for Ubisoft SA, held at Old Trafford, Manchester, UK \end{justify}
+\item \begin{justify} Received National Talent Search Examination (NTSE) Scholarship by the Govt. Of Karnataka (rank 29) \end{justify}
+\end{itemize}
+
+
+\cvsection{Projects}
+\href{https://github.com/ganesh-k13?tab=repositories}{\color{DarkBlue}{Project repositories}}
+\begin{itemize}
+\item Online Judge Platform (Final year B.Tech Project)
+\item DDOS analysis
+\item Multi-Channel Image Steganography
+\item Predictive Text (Autocomplete with Markov chains)
+\item Music Modifier (Auto MP3 metadata modifier)
+\item Implementation of: Btrees, Big Integer Library C++, Shell, Suffix Tree, Dynamic Table.
+\end{itemize}
+
+\end{paracol}
+
+\end{document}
