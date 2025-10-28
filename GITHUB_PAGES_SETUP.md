@@ -12,7 +12,7 @@ This repository now includes a GitHub Pages setup that displays your README, LIC
 
 4. Under "Source", select:
    - Source: **Deploy from a branch**
-   - Branch: **copilot/add-ganeshk-pdf-tab** (or the branch with these changes)
+   - Branch: **main** (or your default branch after merging this PR)
    - Folder: **/ (root)**
 
 5. Click **Save**
