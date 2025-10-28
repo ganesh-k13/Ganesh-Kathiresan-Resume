@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh Kathiresan - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #161b22;
+            border-bottom: 1px solid #21262d;
+            padding: 16px 32px;
+        }
+
+        h1 {
+            color: #58a6ff;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px;
+            border-bottom: 1px solid #21262d;
+        }
+
+        .tab {
+            padding: 8px 16px;
+            background: none;
+            border: none;
+            color: #8b949e;
+            cursor: pointer;
+            font-size: 14px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .tab:hover {
+            color: #c9d1d9;
+            border-bottom-color: #484f58;
+        }
+
+        .tab.active {
+            color: #c9d1d9;
+            border-bottom-color: #f78166;
+        }
+
+        .content {
+            padding: 32px;
+        }
+
+        .tab-content {
+            display: none;
+            background-color: #0d1117;
+            border-radius: 6px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        #pdf-content {
+            width: 100%;
+            height: calc(100vh - 200px);
+            min-height: 800px;
+        }
+
+        #pdf-content embed {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #21262d;
+            border-radius: 6px;
+        }
+
+        .markdown-content {
+            background-color: #0d1117;
+            padding: 24px;
+            border: 1px solid #21262d;
+            border-radius: 6px;
+            line-height: 1.6;
+        }
+
+        .markdown-content h1,
+        .markdown-content h2,
+        .markdown-content h3 {
+            color: #c9d1d9;
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+
+        .markdown-content h1 {
+            font-size: 32px;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 8px;
+        }
+
+        .markdown-content h2 {
+            font-size: 24px;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 8px;
+        }
+
+        .markdown-content h3 {
+            font-size: 20px;
+        }
+
+        .markdown-content p {
+            margin-bottom: 16px;
+        }
+
+        .markdown-content code {
+            background-color: #161b22;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+            font-size: 85%;
+        }
+
+        .markdown-content pre {
+            background-color: #161b22;
+            padding: 16px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin-bottom: 16px;
+        }
+
+        .markdown-content pre code {
+            background: none;
+            padding: 0;
+        }
+
+        .markdown-content ul, .markdown-content ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        .markdown-content a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .markdown-content a:hover {
+            text-decoration: underline;
+        }
+
+        .download-link {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 8px 16px;
+            background-color: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        .download-link:hover {
+            background-color: #2ea043;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📄 Ganesh Kathiresan - Resume</h1>
+            <nav class="tabs">
+                <button class="tab active" onclick="showTab('readme')">README</button>
+                <button class="tab" onclick="showTab('license')">LICENSE</button>
+                <button class="tab" onclick="showTab('pdf')">Resume (PDF)</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container content">
+        <div id="readme-content" class="tab-content active">
+            <div class="markdown-content" id="readme-markdown">
+                Loading README...
+            </div>
+        </div>
+
+        <div id="license-content" class="tab-content">
+            <div class="markdown-content" id="license-text">
+                Loading LICENSE...
+            </div>
+        </div>
+
+        <div id="pdf-content" class="tab-content">
+            <embed src="ganeshk.pdf" type="application/pdf" />
+            <p style="text-align: center; margin-top: 16px;">
+                <a href="ganeshk.pdf" class="download-link" download>📥 Download PDF Resume</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show selected tab content
+            document.getElementById(tabName + '-content').classList.add('active');
+
+            // Mark selected tab as active
+            event.target.classList.add('active');
+        }
+
+        // Load README content
+        fetch('README.md')
+            .then(response => response.text())
+            .then(text => {
+                // Simple markdown to HTML conversion for display
+                const html = convertMarkdownToHTML(text);
+                document.getElementById('readme-markdown').innerHTML = html;
+            })
+            .catch(error => {
+                document.getElementById('readme-markdown').innerHTML = '<p>Error loading README</p>';
+            });
+
+        // Load LICENSE content
+        fetch('LICENSE')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('license-text').innerHTML = '<pre>' + escapeHtml(text) + '</pre>';
+            })
+            .catch(error => {
+                document.getElementById('license-text').innerHTML = '<p>Error loading LICENSE</p>';
+            });
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function convertMarkdownToHTML(markdown) {
+            let html = escapeHtml(markdown);
+            
+            // Headers
+            html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+            html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+            html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+            
+            // Bold
+            html = html.replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>');
+            
+            // Italic
+            html = html.replace(/\*(.*?)\*/gim, '<em>$1</em>');
+            
+            // Links
+            html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/gim, '<a href="$2">$1</a>');
+            
+            // Code blocks
+            html = html.replace(/```(\w+)?\n([\s\S]*?)```/gim, '<pre><code>$2</code></pre>');
+            
+            // Inline code
+            html = html.replace(/`([^`]+)`/gim, '<code>$1</code>');
+            
+            // Line breaks
+            html = html.replace(/\n\n/g, '</p><p>');
+            html = '<p>' + html + '</p>';
+            
+            // Lists
+            html = html.replace(/<p>- (.*?)<\/p>/gim, '<ul><li>$1</li></ul>');
+            html = html.replace(/<\/ul>\n?<ul>/gim, '');
+            
+            return html;
+        }
+    </script>
+</body>
+</html>
