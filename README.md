@@ -1,6 +1,6 @@
 # AltaCV LaTeX CV/Résumé - VS Code Compilation Guide
 
-**📄 [Open Resume (PDF)](ganeshk.pdf)**
+**📄 [Open Resume (PDF)](https://ganesh-k13.github.io/Ganesh-Kathiresan-Resume/)**
 
 A modern LaTeX CV template with VS Code integration for easy PDF compilation.
 
