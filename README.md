@@ -36,6 +36,21 @@ A modern LaTeX CV template with VS Code integration for easy PDF compilation.
 
 The extension automatically handles the required compilation sequence: `pdflatex + biber + pdflatex`
 
+### Bibliography (Publications / Patents)
+
+`ganeshk.bbl` is committed to the repo, so a plain `pdflatex ganeshk.tex` renders
+the full CV — including Publications and Patents — without needing `biber`.
+
+If you edit `sample.bib` or `pubs-num.tex`, regenerate it:
+
+```bash
+pdflatex ganeshk.tex && biber ganeshk && pdflatex ganeshk.tex
+```
+
+Skipping `biber` after a `.bib` change is quiet, not loud: `pdflatex` still exits
+0 and just logs `Empty bibliography` / stale entries. Commit the refreshed
+`ganeshk.bbl` alongside your `.bib` edits.
+
 ### 3. View Your PDF
 - The compiled PDF appears in the same directory
 - Use `Cmd+Alt+V` (macOS) or `Ctrl+Alt+V` (Windows/Linux) to preview in VS Code
@@ -150,4 +165,4 @@ Add to your VS Code `settings.json`:
 
 ---
 
-**Credit**: AltaCV template v1.6.5 (3 Nov 2022), by LianTze Lim (liantze@gmail.com)
+**Credit**: AltaCV template v1.7.4 (30 Jul 2025), by LianTze Lim (liantze@gmail.com)

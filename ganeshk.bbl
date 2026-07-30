@@ -1,0 +1,352 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ydnt/global//global/global/global}
+    \entry{bagaria_velugu_thangamani_kathiresan_2022_1}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=9ca914f76643eabda2ac307c27ba313a}{%
+           family={Bagaria},
+           familyi={B\bibinitperiod},
+           given={Priya},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7cf18e890fc48e03d12468f0d855ff03}{%
+           family={VELUGU},
+           familyi={V\bibinitperiod},
+           given={Kasirao},
+           giveni={K\bibinitperiod}}}%
+        {{hash=face9a7138149d91e23d9996b0088b5f}{%
+           family={Thangamani},
+           familyi={T\bibinitperiod},
+           given={Thirumoorthi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f3b7233c3c1acb8475cd3a64bdcacfb4}{%
+           family={Kathiresan},
+           familyi={K\bibinitperiod},
+           given={Ganesh},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{a51faa14f0e70f8ce0ab8e7fa1deec1d}
+      \strng{fullhash}{e1dde2c17a6176745f2aa0ac9ad313b9}
+      \strng{fullhashraw}{e1dde2c17a6176745f2aa0ac9ad313b9}
+      \strng{bibnamehash}{e1dde2c17a6176745f2aa0ac9ad313b9}
+      \strng{authorbibnamehash}{e1dde2c17a6176745f2aa0ac9ad313b9}
+      \strng{authornamehash}{a51faa14f0e70f8ce0ab8e7fa1deec1d}
+      \strng{authorfullhash}{e1dde2c17a6176745f2aa0ac9ad313b9}
+      \strng{authorfullhashraw}{e1dde2c17a6176745f2aa0ac9ad313b9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{CLIENT-SERVER SESSION BASED ANOMALOUS BEHAVIOR DETECTION}
+      \field{year}{2022}
+      \true{nocite}
+    \endentry
+    \entry{bagaria_velugu_thangamani_kathiresan_2022_2}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=7cf18e890fc48e03d12468f0d855ff03}{%
+           family={VELUGU},
+           familyi={V\bibinitperiod},
+           given={Kasirao},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f3b7233c3c1acb8475cd3a64bdcacfb4}{%
+           family={Kathiresan},
+           familyi={K\bibinitperiod},
+           given={Ganesh},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9ca914f76643eabda2ac307c27ba313a}{%
+           family={Bagaria},
+           familyi={B\bibinitperiod},
+           given={Priya},
+           giveni={P\bibinitperiod}}}%
+        {{hash=face9a7138149d91e23d9996b0088b5f}{%
+           family={Thangamani},
+           familyi={T\bibinitperiod},
+           given={Thirumoorthi},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{34766c0bb77dd40a9b6f7c066ece40c7}
+      \strng{fullhash}{3485405426ece8144198efefbc6a6bcb}
+      \strng{fullhashraw}{3485405426ece8144198efefbc6a6bcb}
+      \strng{bibnamehash}{3485405426ece8144198efefbc6a6bcb}
+      \strng{authorbibnamehash}{3485405426ece8144198efefbc6a6bcb}
+      \strng{authornamehash}{34766c0bb77dd40a9b6f7c066ece40c7}
+      \strng{authorfullhash}{3485405426ece8144198efefbc6a6bcb}
+      \strng{authorfullhashraw}{3485405426ece8144198efefbc6a6bcb}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{AUTOMATICALLY GENERATING FIREWALL CONFIGURATION PROFILES USING LEARNING MODE}
+      \field{year}{2022}
+      \true{nocite}
+    \endentry
+    \entry{bagaria_velugu_thangamani_kathiresan_2022_3}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=7cf18e890fc48e03d12468f0d855ff03}{%
+           family={VELUGU},
+           familyi={V\bibinitperiod},
+           given={Kasirao},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f3b7233c3c1acb8475cd3a64bdcacfb4}{%
+           family={Kathiresan},
+           familyi={K\bibinitperiod},
+           given={Ganesh},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9ca914f76643eabda2ac307c27ba313a}{%
+           family={Bagaria},
+           familyi={B\bibinitperiod},
+           given={Priya},
+           giveni={P\bibinitperiod}}}%
+        {{hash=face9a7138149d91e23d9996b0088b5f}{%
+           family={Thangamani},
+           familyi={T\bibinitperiod},
+           given={Thirumoorthi},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{34766c0bb77dd40a9b6f7c066ece40c7}
+      \strng{fullhash}{3485405426ece8144198efefbc6a6bcb}
+      \strng{fullhashraw}{3485405426ece8144198efefbc6a6bcb}
+      \strng{bibnamehash}{3485405426ece8144198efefbc6a6bcb}
+      \strng{authorbibnamehash}{3485405426ece8144198efefbc6a6bcb}
+      \strng{authornamehash}{34766c0bb77dd40a9b6f7c066ece40c7}
+      \strng{authorfullhash}{3485405426ece8144198efefbc6a6bcb}
+      \strng{authorfullhashraw}{3485405426ece8144198efefbc6a6bcb}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{DYNAMICALLY SELECTING FIREWALL SIGNATURES USING NETWORK TRAFFIC}
+      \field{year}{2022}
+      \true{nocite}
+    \endentry
+    \entry{bagaria_velugu_thangamani_kathiresan_2022_4}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=7cf18e890fc48e03d12468f0d855ff03}{%
+           family={VELUGU},
+           familyi={V\bibinitperiod},
+           given={Kasirao},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f3b7233c3c1acb8475cd3a64bdcacfb4}{%
+           family={Kathiresan},
+           familyi={K\bibinitperiod},
+           given={Ganesh},
+           giveni={G\bibinitperiod}}}%
+        {{hash=9ca914f76643eabda2ac307c27ba313a}{%
+           family={Bagaria},
+           familyi={B\bibinitperiod},
+           given={Priya},
+           giveni={P\bibinitperiod}}}%
+        {{hash=face9a7138149d91e23d9996b0088b5f}{%
+           family={Thangamani},
+           familyi={T\bibinitperiod},
+           given={Thirumoorthi},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{34766c0bb77dd40a9b6f7c066ece40c7}
+      \strng{fullhash}{3485405426ece8144198efefbc6a6bcb}
+      \strng{fullhashraw}{3485405426ece8144198efefbc6a6bcb}
+      \strng{bibnamehash}{3485405426ece8144198efefbc6a6bcb}
+      \strng{authorbibnamehash}{3485405426ece8144198efefbc6a6bcb}
+      \strng{authornamehash}{34766c0bb77dd40a9b6f7c066ece40c7}
+      \strng{authorfullhash}{3485405426ece8144198efefbc6a6bcb}
+      \strng{authorfullhashraw}{3485405426ece8144198efefbc6a6bcb}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{SYSTEMS AND METHODS FOR GRAPHICAL VISUALIZATION OF WEB APPLICATION VULNERABILITIES}
+      \field{year}{2022}
+      \true{nocite}
+    \endentry
+    \entry{jain2021optimizing}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=5e91438712ff9123d494feec9ba3442c}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=88701d95ba98db2051560d356335b42e}{%
+           family={Vardhan},
+           familyi={V\bibinitperiod},
+           given={Harsha},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f3b7233c3c1acb8475cd3a64bdcacfb4}{%
+           family={Kathiresan},
+           familyi={K\bibinitperiod},
+           given={Ganesh},
+           giveni={G\bibinitperiod}}}%
+        {{hash=189a51b1e4b1c6b44373a50d24be6f80}{%
+           family={Narayan},
+           familyi={N\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{d7b864ac1bc1cfc3d1b4e2d3ed2759f7}
+      \strng{fullhash}{ebeff0f8b07b4e68309d301210eac725}
+      \strng{fullhashraw}{ebeff0f8b07b4e68309d301210eac725}
+      \strng{bibnamehash}{ebeff0f8b07b4e68309d301210eac725}
+      \strng{authorbibnamehash}{ebeff0f8b07b4e68309d301210eac725}
+      \strng{authornamehash}{d7b864ac1bc1cfc3d1b4e2d3ed2759f7}
+      \strng{authorfullhash}{ebeff0f8b07b4e68309d301210eac725}
+      \strng{authorfullhashraw}{ebeff0f8b07b4e68309d301210eac725}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in Intelligent Systems and Computing}
+      \field{title}{Optimizing People Sourcing Through Semantic Matching of Job Description Documents and Candidate Profile Using Improved Topic Modelling Techniques}
+      \field{volume}{1133}
+      \field{year}{2021}
+      \true{nocite}
+      \field{pages}{899\bibrangedash 908}
+      \range{pages}{10}
+    \endentry
+    \entry{vinay2017dominant}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=b8e76f85833898d1e0143413c40fc987}{%
+           family={Vinay},
+           familyi={V\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c93769e66a3b8b5c3aedb0d919c0f09e}{%
+           family={Mundroy},
+           familyi={M\bibinitperiod},
+           given={Durga\bibnamedelima Akhil},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=f3b7233c3c1acb8475cd3a64bdcacfb4}{%
+           family={Kathiresan},
+           familyi={K\bibinitperiod},
+           given={Ganesh},
+           giveni={G\bibinitperiod}}}%
+        {{hash=72eeb2fd4827d1390cd376b212253ab9}{%
+           family={Sridhar},
+           familyi={S\bibinitperiod},
+           given={Upasana},
+           giveni={U\bibinitperiod}}}%
+        {{hash=ced86276397ca94777916d7b4a512e7e}{%
+           family={Murthy},
+           familyi={M\bibinitperiod},
+           given={KN\bibnamedelima Balasubramanya},
+           giveni={K\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=f83eb9721a390a85e6f3924786c8d2bc}{%
+           family={Natarajan},
+           familyi={N\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{6301df45b9e689b6a1398b43a3f501b0}
+      \strng{fullhash}{5b608744b86d9be979f86d4e42e9ad1b}
+      \strng{fullhashraw}{5b608744b86d9be979f86d4e42e9ad1b}
+      \strng{bibnamehash}{5b608744b86d9be979f86d4e42e9ad1b}
+      \strng{authorbibnamehash}{5b608744b86d9be979f86d4e42e9ad1b}
+      \strng{authornamehash}{6301df45b9e689b6a1398b43a3f501b0}
+      \strng{authorfullhash}{5b608744b86d9be979f86d4e42e9ad1b}
+      \strng{authorfullhashraw}{5b608744b86d9be979f86d4e42e9ad1b}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 International Conference on Big Data Analytics and Computational Intelligence (ICBDAC)}
+      \field{title}{Dominant feature based convolutional neural network for faces in videos}
+      \field{year}{2017}
+      \true{nocite}
+      \field{pages}{17\bibrangedash 22}
+      \range{pages}{6}
+    \endentry
+    \entry{vinay2016face}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=b8e76f85833898d1e0143413c40fc987}{%
+           family={Vinay},
+           familyi={V\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f3b7233c3c1acb8475cd3a64bdcacfb4}{%
+           family={Kathiresan},
+           familyi={K\bibinitperiod},
+           given={Ganesh},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c93769e66a3b8b5c3aedb0d919c0f09e}{%
+           family={Mundroy},
+           familyi={M\bibinitperiod},
+           given={Durga\bibnamedelima Akhil},
+           giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=56354fff81dc6564025844fd29367587}{%
+           family={Nandan},
+           familyi={N\bibinitperiod},
+           given={H\bibnamedelima Nihar},
+           giveni={H\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=7e11de45116644b9d4dd2c1058012bca}{%
+           family={Sureka},
+           familyi={S\bibinitperiod},
+           given={Chetna},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ced86276397ca94777916d7b4a512e7e}{%
+           family={Murthy},
+           familyi={M\bibinitperiod},
+           given={KN\bibnamedelima Balasubramanya},
+           giveni={K\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=f83eb9721a390a85e6f3924786c8d2bc}{%
+           family={Natarajan},
+           familyi={N\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6301df45b9e689b6a1398b43a3f501b0}
+      \strng{fullhash}{5b1cbb3d07c490715304040dcb264d22}
+      \strng{fullhashraw}{5b1cbb3d07c490715304040dcb264d22}
+      \strng{bibnamehash}{6301df45b9e689b6a1398b43a3f501b0}
+      \strng{authorbibnamehash}{6301df45b9e689b6a1398b43a3f501b0}
+      \strng{authornamehash}{6301df45b9e689b6a1398b43a3f501b0}
+      \strng{authorfullhash}{5b1cbb3d07c490715304040dcb264d22}
+      \strng{authorfullhashraw}{5b1cbb3d07c490715304040dcb264d22}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Procedia Computer Science}
+      \field{title}{Face recognition using filtered eoh-sift}
+      \field{volume}{79}
+      \field{year}{2016}
+      \true{nocite}
+      \field{pages}{543\bibrangedash 552}
+      \range{pages}{10}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

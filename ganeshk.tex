@@ -29,7 +29,8 @@
 
 % Change the font if you want to, depending on whether
 % you're using pdflatex or xelatex/lualatex
-\ifxetexorluatex
+% (v1.7 renamed \ifxetexorluatex to \iftutex)
+\iftutex
   % If using xelatex or lualatex:
   \setmainfont{Lato}
 \else
@@ -58,8 +59,9 @@
 
 % Change the bullets for itemize and rating marker
 % for \cvskill if you want to
-\renewcommand{\itemmarker}{{\small\textbullet}}
-\renewcommand{\ratingmarker}{\faCircle}
+% (v1.7 renamed \itemmarker/\ratingmarker to \cvItemMarker/\cvRatingMarker)
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
 
 %% Use (and optionally edit if necessary) this .tex if you
 %% want to use an author-year reference style like APA(6)
@@ -95,8 +97,10 @@
 %   \phone{000-00-0000}
   \linkedin{ganesh-kathiresan}
   \github{ganesh-k13}
-  \printinfo{\faMedium}{ganeshkathiresan}[https://ganeshkathiresan.medium.com/]
-  \printinfo{\faLink}{Website}[https://ganesh-k13.github.io/]
+  %% v1.7 added a leading optional arg to \printinfo: the label used for the
+  %% icon's PDF ActualText, so copy-paste yields "Medium:" not "\faMedium :"
+  \printinfo[Medium]{\faMedium}{ganeshkathiresan}[https://ganeshkathiresan.medium.com/]
+  \printinfo[Website]{\faLink}{Website}[https://ganesh-k13.github.io/]
 %   \github{github.com/mmayer} % I'm just making this up though.
 %   \orcid{0000-0000-0000-0000} % Obviously making this up too.
   %% You can add your own arbitrary detail with
@@ -230,12 +234,12 @@
 
 \nocite{*}
 \begin{justify}
-\printbibliography[heading=pubtype,title={\printinfo{\faFile*[regular]}{Journal Articles}}, type=article]
+\printbibliography[heading=pubtype,title={\printinfo[Journal Articles]{\faFile*[regular]}{Journal Articles}}, type=article]
 \end{justify}
 
 \divider
 
-\printbibliography[heading=pubtype,title={\printinfo{\faUsers}{Patents}},type=misc]
+\printbibliography[heading=pubtype,title={\printinfo[Patents]{\faUsers}{Patents}},type=misc]
 
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.

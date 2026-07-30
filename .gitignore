@@ -26,6 +26,11 @@
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
+## ...but DO track ganeshk.bbl so a bare `pdflatex ganeshk.tex` on a fresh
+## clone still renders the Publications/Patents sections. Without it, pdflatex
+## exits 0 but silently emits "Empty bibliography". Regenerate with `biber
+## ganeshk` (then re-run pdflatex) whenever sample.bib or pubs-num.tex changes.
+!ganeshk.bbl
 *.bbl-SAVE-ERROR
 *.bcf
 *.bcf-SAVE-ERROR
