@@ -28,6 +28,13 @@
             padding: 16px 32px;
         }
 
+        .header-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
         h1 {
             color: #58a6ff;
             font-size: 24px;
@@ -62,6 +69,20 @@
             font-weight: 500;
         }
 
+        .download-btn {
+            margin: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        .download-btn svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
         .download-link:hover {
             background-color: #2ea043;
         }
@@ -69,8 +90,12 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container header-bar">
             <h1>📄 Ganesh Kathiresan - Resume</h1>
+            <a href="ganeshk.pdf" class="download-link download-btn" download>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16l-6-6h4V4h4v6h4l-6 6zm-8 2h16v2H4v-2z"/></svg>
+                Download Resume
+            </a>
         </div>
     </header>
 
